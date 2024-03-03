@@ -18,7 +18,7 @@ RP_BUTTONS = [
     [
         Button.url(get_string("bot_3"), "https://github.com/naya1503/Naya-Userbot"),
     ],
-    [Button.url("Support Group", "t.me/skyfand")],
+    [Button.url("Support Group", "t.me/ZoneDangerSex")],
 ]
 
 AYSTRING = """🎇 **Thanks for Deploying Naya-Userbot**
