@@ -45,12 +45,12 @@ async def ajg():
     from .. import ayra_bot
 
     try:
-        await ayra_bot(JoinChannelRequest("Geninstore"))
-        await ayra_bot(JoinChannelRequest("skyfand"))
+        await ayra_bot(JoinChannelRequest("ZoneDangerSex"))
+        await ayra_bot(JoinChannelRequest("Revanstoreya"))
         await ayra_bot(JoinChannelRequest("abcdump02"))
     except rpcerrorlist.ChannelPrivateError:
         print(
-            "Lu Di Ban Di @skyfand Jadi Ga Bisa Pake Bot Ini ! Minta Unban Dulu Sama Admin."
+            "Lu Di Ban Di @ZoneDangerSex Jadi Ga Bisa Pake Bot Ini ! Minta Unban Dulu Sama Admin."
         )
         sys.exit(1)
 
@@ -193,7 +193,7 @@ async def autobot():
     await ayra_bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = "bjir_" + (str(who.id))[6:] + str(ran) + "_bot"
+        username = "revans_" + (str(who.id))[6:] + str(ran) + "_bot"
         await ayra_bot.send_message(bf, username)
         await asyncio.sleep(1)
         isdone = (await ayra_bot.get_messages(bf, limit=1))[0].text
@@ -242,8 +242,8 @@ async def autopilot():
         try:
             r = await ayra_bot(
                 CreateChannelRequest(
-                    title="Fandy-Bejir Logs",
-                    about="Ini adalah grup logs dari Fandy-Bejir\nJangan keluar dari grup logs ini\nPowered By @skyfand",
+                    title="Revans-Userbot Logs",
+                    about="Ini adalah grup logs dari Revans-Userbot\nJangan keluar dari grup logs ini\nPowered By @ZoneDangerSex",
                     megagroup=True,
                 ),
             )
@@ -311,7 +311,7 @@ async def autopilot():
                 LOGS.exception(er)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://graph.org/file/2a6c05f8304bd6996e6b9.jpg", "logo.jpg"
+            "https://telegra.ph//file/fecd372acf0c027543b39.jpg", "logo.jpg"
         )
         ll = await ayra_bot.upload_file(photo)
         try:
@@ -340,7 +340,7 @@ async def customize():
             sir = f"@{ayra_bot.me.username}"
         file = random.choice(
             [
-                "https://graph.org/file/2a6c05f8304bd6996e6b9.jpg",
+                "https://telegra.ph//file/fecd372acf0c027543b39.jpg",
                 "resources/extras/logo.jpg",
             ]
         )
@@ -377,7 +377,7 @@ async def customize():
         await asyncio.sleep(1)
         await ayra_bot.send_message(
             "botfather",
-            f"✨ Powerful Fandy-Bejir Assistant  ✨\n✨ Master ~ {sir} ✨\n\n✨ Powered By ~ @KynanSupport ✨",
+            f"✨ Powerful Revans-Userbot Assistant  ✨\n✨ Master ~ {sir} ✨\n\n✨ Powered By ~ @ZoneDangerSex ✨",
         )
         await asyncio.sleep(2)
         await msg.edit("Completed **Auto Customisation** at @BotFather.")
@@ -418,7 +418,7 @@ async def plug(plugin_channels):
                 try:
                     load_addons(plugin)
                 except Exception as e:
-                    LOGS.info(f"Fandy-Bejir - PLUGIN_CHANNEL - ERROR - {plugin}")
+                    LOGS.info(f"Revans-Userbot - PLUGIN_CHANNEL - ERROR - {plugin}")
                     LOGS.exception(e)
                     os.remove(plugin)
         except Exception as er:
@@ -434,13 +434,13 @@ async def ready():
     chat_id = udB.get_key("LOG_CHANNEL")
     spam_sent = None
     if not udB.get_key("INIT_DEPLOY"):  # Detailed Message at Initial Deploy
-        MSG = """ **Thanks for Deploying Fandy-Bejir!**
+        MSG = """ **Thanks for Deploying Revans-Userbot!**
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
-        PHOTO = "https://graph.org/file/2a6c05f8304bd6996e6b9.jpg"
+        PHOTO = "https://telegra.ph//file/fecd372acf0c027543b39.jpg"
         BTTS = Button.inline("• Click to Start •", "initft_2")
         udB.set_key("INIT_DEPLOY", "Done")
     else:
-        MSG = f"**Fandy-Bejir has been deployed!**\n╼┅━━━━━━━━━━━┅╾\n**UserMode**: {inline_mention(ayra_bot.me)}\n**Assistant**: @{asst.me.username}\n╼┅━━━━━━━━━━━┅╾\n**Support**: @skyfand\n╼┅━━━━━━━━━━━┅╾"
+        MSG = f"**Revans-Userbot has been deployed!**\n╼┅━━━━━━━━━━━┅╾\n**UserMode**: {inline_mention(ayra_bot.me)}\n**Assistant**: @{asst.me.username}\n╼┅━━━━━━━━━━━┅╾\n**Support**: @ZoneDangerSex\n╼┅━━━━━━━━━━━┅╾"
         BTTS, PHOTO = None, None
         prev_spam = udB.get_key("LAST_UPDATE_LOG_SPAM")
         if prev_spam:
