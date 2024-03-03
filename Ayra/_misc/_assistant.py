@@ -21,10 +21,10 @@ from . import append_or_update, owner_and_sudos
 OWNER = ayra_bot.full_name
 
 MSG = f"""
-**Fandy Bejir**
+**Revans Userbot**
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 **Owner**: [{OWNER}](tg://user?id={ayra_bot.uid})
-**Support**: @skyfand
+**Support**: @ZoneDangerSex
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 """
 
@@ -32,9 +32,9 @@ IN_BTTS = [
     [
         Button.url(
             "Repository",
-            url="https://github.com/ubotfand/Fandy-Bejir",
+            url="https://github.com/Rehansaputradewantoro/Rehan-Userbot",
         ),
-        Button.url("Support", url="https://t.me/skyfand"),
+        Button.url("Support", url="https://t.me/ZoneDangerSex"),
     ]
 ]
 
@@ -92,11 +92,11 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                 res = [
                     await event.builder.article(
                         title="ᴀʏʀᴀ ꭙ ᴜꜱᴇʀʙᴏᴛ​",
-                        url="https://t.me/kynansupport​",
-                        description="© Kynan",
+                        url="https://t.me/ZoneDangerSex​",
+                        description="© Revans505",
                         text=MSG,
                         thumb=InputWebDocument(
-                            "https://graph.org/file/02f9ca4617cec58377b9d.jpg",
+                            "https://telegra.ph//file/fecd372acf0c027543b39.jpg",
                             0,
                             "image/jpeg",
                             [],
@@ -127,7 +127,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                                 title="Unhandled Exception has Occured!",
                                 text=error_text(),
                                 buttons=Button.url(
-                                    "Report", "https://t.me/kynansupport"
+                                    "Report", "https://t.me/ZoneDangerSex"
                                 ),
                             )
                         ]
