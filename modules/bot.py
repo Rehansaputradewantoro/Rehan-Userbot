@@ -30,11 +30,11 @@ except ImportError:
 
 from telethon.utils import resolve_bot_file_id
 
-piic = "https://graph.org/file/60408fea8439e6702674d.jpg"
+piic = "https://telegra.ph//file/fecd372acf0c027543b39.jpg"
 
 buttons = [
     [
-        Button.url(get_string("bot_4"), "t.me/skyfand"),
+        Button.url(get_string("bot_4"), "t.me/ZoneDangerSex"),
     ]
 ]
 
@@ -71,18 +71,18 @@ in_alive = """
 
 absen = [
     "**Hadir Sayang** 😳",
-    "**Hadir Bro Fandy** 😁",
-    "**Maaf ka habis nemenin ka Fandy** 🥺",
-    "**Maaf ka habis disuruh Tuan Fandy** 🥺🙏🏻",
-    "**Hadir Fandy Sayang** 😘",
-    "**Hadir Fandy Akuuuuhhh** ☺️",
-    "**Hadir Fandy brother Aku** 🥰",
-    "**Sokap bet lu Anjing Fandy**",
-    "**Apasi Bawel Fandy** 🥰",
+    "**Hadir Beb Revans505** 😁",
+    "**kyyyyaaa sayangggRevans** 🥺",
+    "**Maaf ka habis disuruh Tuan Revans** 🥺🙏🏻",
+    "**Hadir Revans Sayang** 😘",
+    "**Hadir RevansSayanggkuuuuhhh** ☺️",
+    "**Hadir Revansku** 🥰",
+    "**Sokap bet lu Anjing Revans**",
+    "**Apasi Bawel Revans** 🥰",
 ]
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^Absen$")
+@register(incoming=True, from_users=DEVS, pattern=r"^Sayang$")
 async def kynanabsen(ganteng):
     await ganteng.reply(choice(absen))
 
@@ -205,7 +205,7 @@ async def _(event):
     x = await event.eor("Ping !")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
-    await x.edit(f"**Pong !!** `{end}ms`\n**Uptime** - `{uptime}`")
+    await x.edit(f"**Nyepong 💋** `{end}ms`\n**Croot💦** - `{uptime}`")
 
 
 async def get_readable_time(seconds: int) -> str:
