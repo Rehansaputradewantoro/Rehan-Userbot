@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-REPO="https://github.com/fand29/Fandy-Bejir.git"
-DIR="/root/fand29"
+REPO="https://github.com/Rehansaputradewantoro/Rehan-Userbot"
+DIR="/root/Rehansaputradewantoro"
 
 spinner(){
     local pid=$!
@@ -31,7 +31,7 @@ clone_repo(){
             fi
             return
     fi
-    echo -e "Cloning Fandy-Bejir ${BRANCH}... "
+    echo -e "Cloning Revans-Userbot ${BRANCH}... "
     git clone -b $BRANCH $REPO $DIR
 }
 
