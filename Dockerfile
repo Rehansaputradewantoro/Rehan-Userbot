@@ -14,7 +14,7 @@ COPY installer.sh .
 RUN bash installer.sh
 
 # changing workdir
-WORKDIR "/root/fand29"
+WORKDIR "/root/Revasn-Userbot"
 
 # start the bot.
 CMD ["bash", "start"]
