@@ -11,7 +11,7 @@ from . import LOG_CHANNEL, Button, asst, ayra_cmd, eor, get_string
 REPOMSG = """
 ◈ **ᴀʏʀᴀ ꭙ ᴜꜱᴇʀʙᴏᴛ​** ◈\n
 ◈ Repo - [Click Here](https://github.com/naya1503/Naya-Userbot)
-◈ Support - @kynansupport
+◈ Support - @ZoneDangerSex
 """
 
 RP_BUTTONS = [
@@ -32,7 +32,7 @@ async def useAyra(rs):
     msg = await asst.send_message(
         rs.chat_id,
         AYSTRING,
-        file="https://telegra.ph//file/fecd372acf0c027543b39.jpg,
+        file="https://telegra.ph//file/fecd372acf0c027543b39.jpg",
         buttons=button,
     )
     if not (rs.chat_id == LOG_CHANNEL and rs.client._bot):
