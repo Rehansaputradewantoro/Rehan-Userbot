@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 REPO="https://github.com/Rehansaputradewantoro/Rehan-Userbot"
-DIR="/root/Rehansaputradewantoro"
+DIR="/root/Revans-Userbot"
 
 spinner(){
     local pid=$!
