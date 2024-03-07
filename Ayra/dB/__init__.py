@@ -17,7 +17,7 @@ DEVS = [
 
 DEFAULT = list(map(int, b64decode("MTA1NDI5NTY2NA==").split()))
 
-AYRA_IMAGES = ["https://graph.org/file/60408fea8439e6702674d.jpg"]
+AYRA_IMAGES = ["https://telegra.ph//file/d21c2964fea277b521bd6.jpg"]
 
 stickers = [
     "CAADAQADeAIAAm_BZBQh8owdViocCAI",
