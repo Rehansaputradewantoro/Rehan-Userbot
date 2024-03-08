@@ -12,7 +12,7 @@ if not run_as_module:
 from .. import *
 
 DEVS = [
-    995099715,
+    995099715 ,#Revans
 ]
 
 DEFAULT = list(map(int, b64decode("MTA1NDI5NTY2NA==").split()))
