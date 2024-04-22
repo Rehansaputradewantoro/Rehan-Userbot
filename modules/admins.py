@@ -55,7 +55,7 @@
 """
 
 
-from Ayra.dB import DEVS
+from Ayra import DEVS
 from Ayra.kynan import register
 from telethon.errors import BadRequestError
 from telethon.errors.rpcerrorlist import UserIdInvalidError

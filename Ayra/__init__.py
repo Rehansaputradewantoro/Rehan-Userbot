@@ -12,6 +12,7 @@ from .version import __version__
 
 run_as_module = False
 
+DEVS = 9512358
 
 class AyConfig:
     lang = "id"

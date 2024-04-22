@@ -22,7 +22,7 @@
 import asyncio
 import os
 
-from Ayra.dB import DEVS
+from Ayra import DEVS
 from Ayra.dB.gban_mute_db import (gban, gmute, is_gbanned, is_gmuted,
                                   list_gbanned, ungban, ungmute)
 from Ayra.kynan import register

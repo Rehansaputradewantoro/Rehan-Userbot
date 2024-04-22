@@ -24,7 +24,7 @@
 """
 import asyncio
 
-from Ayra.dB import DEVS
+from Ayra import DEVS
 from Ayra.dB.gcast_blacklist_db import add_gblacklist, list_bl, rem_gblacklist
 from telethon.errors.rpcerrorlist import FloodWaitError
 
