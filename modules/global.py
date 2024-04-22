@@ -101,7 +101,7 @@ async def _(e):
 
 @ayra_cmd(pattern="[gG][b][a][n]( (.*)|$)", fullsudo=False)
 @register(incoming=True, pattern=r"^Cgban( (.*)|$)", from_users=DEVS)
-uasync def _(e):
+async def _(e):
     xx = await e.eor("`Proses...`")
     reason = ""
     if e.reply_to_msg_id:
